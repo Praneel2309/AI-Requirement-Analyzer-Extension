@@ -1,0 +1,64 @@
+{
+  "ambiguities": [
+    {
+      "clarification_question": "What specific measurable factors define 'profile strength', and what relative weight should be assigned to skills versus experience?",
+      "issue": "Vague and subjective definition of candidate evaluation criteria",
+      "original_statement": "Mainly skills and experience. And overall profile strength.",
+      "why_it_is_ambiguous": "'Overall profile strength' is subjective and undefined, making it impossible to implement an algorithm without explicit weights or rules."
+    },
+    {
+      "clarification_question": "What objective criteria or data points determine if a company is 'good', a project is 'solid', or work is 'impactful'?",
+      "issue": "Subjective terminology lacking quantifiable metrics",
+      "original_statement": "Things like good companies, solid projects, impactful work.",
+      "why_it_is_ambiguous": "Terms like 'good', 'solid', and 'impactful' are subjective and open to individual interpretation."
+    },
+    {
+      "clarification_question": "What specific set of skills or project achievements allows a zero-experience candidate to score higher than a candidate with 5 years of experience?",
+      "issue": "Incomplete logic and lack of quantifiable rules",
+      "original_statement": "Yes, but not strictly. Sometimes a strong fresher is better than someone with 5 average years.",
+      "why_it_is_ambiguous": "It does not specify how to algorithmically trade off years of experience against skill depth or candidate quality."
+    },
+    {
+      "clarification_question": "In what formats are the past resumes stored (e.g., PDF, DOCX, scanned images), and is there a clean dataset linking each resume to a ground-truth hiring outcome?",
+      "issue": "Vague data description",
+      "original_statement": "We have past resumes and hiring decisions, but they\u2019re not very structured.",
+      "why_it_is_ambiguous": "'Not very structured' does not define the file formats, data consistency, labeling quality, or volume of historical data available."
+    },
+    {
+      "clarification_question": "What specific target accuracy, precision, recall, or candidate overlap percentage with human screeners is required for acceptance?",
+      "issue": "Missing measurable acceptance criteria",
+      "original_statement": "It should be good enough so that HR trusts it.",
+      "why_it_is_ambiguous": "'Trust' and 'good enough' are qualitative and cannot be objectively verified during testing."
+    },
+    {
+      "clarification_question": "Is explainability a mandatory requirement for the MVP, and should it output feature-weight scores, text summaries, or key phrase matches?",
+      "issue": "Ambiguous priority and specification for explainability",
+      "original_statement": "Yes, that would be useful.",
+      "why_it_is_ambiguous": "It is unclear whether explainability is a mandatory core requirement or a optional feature, and what level of detail must be presented to users."
+    },
+    {
+      "clarification_question": "Should personal identifying information (PII) like names, gender, and institution names be explicitly redacted before feature extraction, and what fairness metric should be enforced?",
+      "issue": "Missing defined constraints and audit metrics",
+      "original_statement": "Yes, we must avoid bias, especially related to gender or college background.",
+      "why_it_is_ambiguous": "It states a goal without defining how bias will be measured, masked, or audited in the scoring pipeline."
+    },
+    {
+      "clarification_question": "What is the maximum acceptable processing time per resume or batch of resumes?",
+      "issue": "Missing Non-Functional Requirement (NFR) constraints",
+      "original_statement": "It shouldn\u2019t be slow.",
+      "why_it_is_ambiguous": "'Slow' is subjective and depends on system load, resume size, and architecture type."
+    },
+    {
+      "clarification_question": "What is the target latency per resume processing request under peak load (e.g., under 2 seconds per resume)?",
+      "issue": "Missing precise performance metric",
+      "original_statement": "Ideally quick.",
+      "why_it_is_ambiguous": "'Quick' lacks quantitative bounds such as SLA time in seconds or milliseconds."
+    },
+    {
+      "clarification_question": "What is the specific calendar deadline or target sprint for delivering the MVP?",
+      "issue": "Vague delivery timeline",
+      "original_statement": "We need an MVP soon",
+      "why_it_is_ambiguous": "'Soon' does not provide a fixed target date for project planning and milestone tracking."
+    }
+  ]
+}
