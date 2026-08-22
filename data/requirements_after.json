@@ -1,0 +1,18 @@
+{
+  "functional_requirements": [
+    "The system shall parse candidate resumes to extract technical skills, work experience, and project details for evaluation against job descriptions.",
+    "The system shall calculate candidate relevance scores using a weighted scoring model where technical skills hold the highest weight, followed by relevant work experience, and then relevant project experience.",
+    "The system shall evaluate candidate project strength based on four explicit factors: job relevance, technical complexity, demonstrated impact, and evidence of implementation.",
+    "The system shall compute candidate rankings such that high skill and project relevance scores allow candidates with fewer years of experience to rank higher than candidates with more years of experience but lower relevance scores.",
+    "The system shall generate a detailed explainability breakdown for every scored candidate, displaying the primary factors and feature weights that contributed to their final rank.",
+    "The system shall support batch upload and asynchronous processing of large sets of candidate resumes against a single job description.",
+    "The data ingestion pipeline shall clean, structure, and audit historical hiring data to remove historical bias prior to dataset ingestion for model training."
+  ],
+  "non_functional_requirements": [
+    "The system shall complete individual resume processing and ranking within 3 seconds per resume under normal operating conditions.",
+    "The automated ranking model shall achieve at least 90% agreement when measured against a human-reviewed benchmark on a representative validation dataset.",
+    "The system shall strictly exclude protected attributes and proxy variables\u2014specifically gender and college/university name\u2014from the scoring algorithm to maintain non-discrimination across demographic groups.",
+    "The scoring model shall restrict company reputation metrics to contextual evaluation only, ensuring company background cannot directly increase a candidate score or dominate the overall ranking.",
+    "The Minimum Viable Product (MVP) shall be fully implemented, tested, and ready for deployment within an 8-week timeline from project kickoff."
+  ]
+}
