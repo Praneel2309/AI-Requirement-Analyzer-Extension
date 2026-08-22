@@ -1,0 +1,23 @@
+1. Relevance should be determined by how closely a candidate's technical skills, work experience, and projects match the required and preferred skills in the job description.
+
+2. Skills should have the highest importance, followed by relevant experience and then relevant projects.
+
+3. Good companies should not directly increase a candidate's score. Company reputation may only be used as contextual information and must not dominate ranking.
+
+4. Project strength should be evaluated using relevance to the job, technical complexity, demonstrated impact, and evidence of implementation.
+
+5. Years of experience should be considered as one factor but should not override strong evidence of relevant skills and projects. A highly relevant fresher may rank above an experienced candidate with weaker relevance.
+
+6. Historical hiring data can be used, but it must first be cleaned, structured, and checked for historical bias before being used for model training.
+
+7. The system should achieve at least 90% agreement with a human review benchmark on a representative validation dataset.
+
+8. Every candidate ranking should include an explanation showing the major factors contributing to the score.
+
+9. Gender, college name, and other protected or proxy attributes should not directly influence the ranking. Fairness should be evaluated across relevant demographic groups.
+
+10. Resume processing should normally complete within 3 seconds per resume.
+
+11. The system should support batch processing for large numbers of resumes.
+
+12. The MVP should be delivered within 8 weeks.
