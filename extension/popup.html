@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>AI Requirement Analyzer</title>
+
+    <link rel="stylesheet" href="popup.css">
+
+</head>
+
+<body>
+
+    <h1>AI Requirement Analyzer</h1>
+
+    <textarea
+        id="transcript"
+        placeholder="Paste meeting transcript here..."
+    ></textarea>
+
+    <button id="analyzeBtn">
+        Detect Ambiguities
+    </button>
+
+    <button id="requirementsBtn">
+        Generate Requirements
+    </button>
+
+    <div id="questions"></div>
+
+    <hr>
+
+    <h2>Clarification Responses</h2>
+
+    <textarea
+        id="clarifications"
+        placeholder="Enter stakeholder clarification responses..."
+    ></textarea>
+
+    <button id="refineBtn">
+        Generate Refined Requirements
+    </button>
+
+    <button id="evaluateBtn">
+        Compare Requirement Quality
+    </button>
+    
+    <div id="exportButtons" style="display: none; margin-top: 15px;">
+
+        <button id="exportTxtBtn">
+            Export Results as TXT
+        </button>
+
+        <button id="exportPdfBtn">
+            Export Results as PDF
+        </button>
+
+    </div>
+    
+    <div id="results"></div>
+
+    <script src="popup.js"></script>
+
+</body>
+
+</html>
